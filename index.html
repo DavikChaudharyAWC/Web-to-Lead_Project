@@ -6,11 +6,12 @@
     <title>Web to Lead form</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
   <body>
     <div class="headingContainer">
       <h1 class="heading">Create lead</h1>
-      <img src="./salesforce.png" alt="logo"/>
+      <img src="./salesforce.png" alt="logo" />
     </div>
     <div class="formContainer">
       <form
@@ -18,6 +19,11 @@
         method="POST"
         onsubmit="beforeSubmit()"
       >
+        <input
+          type="hidden"
+          name="captcha_settings"
+          value='{"keyname":"WebToLeadForm","fallback":"true","orgId":"00DdL000000aofO","ts":""}'
+        />
         <input type="hidden" name="oid" value="00DdL000000aofO" />
         <input
           type="hidden"
@@ -70,6 +76,11 @@
             size="12"
             type="text" /></span
         ><br /> -->
+        <div
+          class="g-recaptcha"
+          data-sitekey="6LeMauMpAAAAAMPMGZgR2Rr7BEkxAXsWSoyGNU4z"
+        ></div>
+        <br />
 
         <input type="submit" name="submit" class="submit" />
       </form>

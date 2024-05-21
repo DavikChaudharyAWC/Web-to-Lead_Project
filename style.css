@@ -76,3 +76,7 @@ input::placeholder{
     color: var(--secondColor);
 }
 
+.g-recaptcha{
+  display: flex;
+  justify-content: end;
+}
