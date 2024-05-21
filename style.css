@@ -14,13 +14,24 @@ body {
   color: var(--secondColor);
   font-size: 1rem;
 }
-
+.headingContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 5rem;
+}
 .heading {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem 0;
   color: var(--firstColor);
+}
+img{
+  height: 4rem;
+  width: 5rem;
+  justify-content: center;
+  align-self: center;
 }
 .formContainer {
   background-color: var(--foregroundColor);
